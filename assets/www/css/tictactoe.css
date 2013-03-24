@@ -1,0 +1,48 @@
+.board {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.col {
+    width: 33.33%;
+    height: 0;
+    padding-bottom: 33.33%;
+    border: 1px black solid;
+    margin: -1px;
+    background-size: contain;
+
+}
+
+@media (orientation: landscape) {
+    .board {
+        height: 100%;
+        width: 0;
+        padding-right: 100%;
+    }
+    .col {
+        height: 33.33%;
+        width: 0;
+        padding-right: 33.33%;
+    }
+    .row { height: 33.33%;}
+}
+
+.WinnerX, .WinnerO {
+    opacity: 0.5;
+}
+.col.X {
+    background: url(../img/x.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.col.O {
+    background: url(../img/o.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.row .col {
+    float: left;
+}

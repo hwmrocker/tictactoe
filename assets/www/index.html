@@ -23,18 +23,30 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/tictactoe.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div class="board">
+            <div class="row">
+                <div class="col" id="11" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="12" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="13" onclick="window.bar.mark(this)"></div>
+            </div>
+            <div class="row">
+                <div class="col" id="21" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="22" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="23" onclick="window.bar.mark(this)"></div>
+            </div>
+            <div class="row">
+                <div class="col" id="31" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="32" onclick="window.bar.mark(this)"></div>
+                <div class="col" id="33" onclick="window.bar.mark(this)"></div>
             </div>
         </div>
         <script type="text/javascript" src="cordova-2.5.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/tictactoe.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
